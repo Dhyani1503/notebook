@@ -10,7 +10,7 @@ pipeline {
                 script{
                     echo 'building the application'
                     sh "docker build -t dhyans/examdevops:examimage ."
-                    sh "docker run -it -d -p 3000:3000 dhyans/examdevops:examimage"
+                    sh "docker run -it -d -p 3001:3001 dhyans/examdevops:examimage"
 
                 }
             }
